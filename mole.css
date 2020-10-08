@@ -23,7 +23,7 @@
     bottom: 0;
 }
 
-.wgs__mole-head--hidden:active {
+.wgs__mole-head--hidden {
     transition: margin-top 0.25s;
     margin-top: 482px;
 }
@@ -33,3 +33,13 @@
     width: 500px;
     height: 500px;
 } */
+
+.pf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+body {
+    zoom: 0.2;
+}
