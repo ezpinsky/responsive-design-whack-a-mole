@@ -8,12 +8,12 @@
 // });
 
 const popUpRandomMole = () => {
-    let moleHeads = document.querySelectorAll("wgs__dirt-pile");
-    console.log(moleHeads);
-    let rand = Math.floor(Math.random() * 7);
+    let moleHeads = document.querySelectorAll(".wgs__mole-head");
+    let rand = Math.floor(Math.random() * moleHeads.length);
     let mole = moleHeads[rand];
     mole.classList.remove("wgs__mole-head--hidden");
-    setTimeout(hideMole(mole), 1000);
+    // console.log(mole);
+    setTimeout(hideMole, 1000, mole);
 };
 
 const hideMole = function (mole) {
@@ -21,4 +21,8 @@ const hideMole = function (mole) {
     setTimeout(popUpRandomMole, 1000);
 };
 
-window.addEventListener("DOMContentLoaded", popUpRandomMole());
+window.addEventListener("DOMContentLoaded", (e) => {
+    setTimeout(popUpRandomMole, 0);
+});
+
+
