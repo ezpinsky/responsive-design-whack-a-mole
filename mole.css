@@ -1,1 +1,35 @@
-/* Write your CSS here. */
+.wgs {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 482px;
+    width: 640px;
+}
+
+.wgs__mole-head {
+    /* transition: margin-top 0.25s;
+    transition: width 1s; */
+
+    position: absolute;
+    height: 356px;
+    width: 376px;
+    left: 109px;
+}
+
+.wgs__dirt-pile {
+    position: absolute;
+    height: 220px;
+    width: 640px;
+    bottom: 0;
+}
+
+.wgs__mole-head--hidden:active {
+    transition: margin-top 0.25s;
+    margin-top: 482px;
+}
+
+/* .wgs__mole-head--hidden:hover {
+    transition: width 1s height 1s;
+    width: 500px;
+    height: 500px;
+} */
