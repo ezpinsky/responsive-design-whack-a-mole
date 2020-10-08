@@ -1,3 +1,20 @@
+.scoreboard {
+    display: flex;
+    position: relative;
+    background-color: rgb(44, 94, 201);
+    height: 150px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    align-items: flex-start;
+}
+
+.score {
+    color: white;
+    font-size: 80px;
+    padding: 30px;
+    margin-left: 30px;
+}
+
 .wgs {
     display: inline-block;
     position: relative;
